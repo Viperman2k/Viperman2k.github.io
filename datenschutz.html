@@ -3,54 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutz - MedVitrine</title>
+    <title>Datenschutz – MediPartner</title>
     <style>
         body {
-            background-color: #e0e4e8; /* Ein dezentes Hellgrau wie auf dem Bild */
+            background-color: #e0e4e8;
             background-image: radial-gradient(#bac5d0 1px, transparent 1px);
-            background-size: 40px 40px; /* Punktmuster-Raster */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+            background-size: 40px 40px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
         h1 { color: #0056b3; }
         h2 { color: #0056b3; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h3 { color: #333; margin-top: 18px; font-size: 1.05em; }
         .back-link { display: inline-block; margin-bottom: 20px; color: #0056b3; text-decoration: none; font-weight: bold; }
+        .note {
+            background: #fff8e6;
+            border-left: 4px solid #e0a800;
+            padding: 12px 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        ul { padding-left: 1.3em; }
+        li { margin-bottom: 6px; }
         footer { margin-top: 50px; font-size: 0.8em; color: #777; text-align: center; }
+        a { color: #0056b3; }
     </style>
 </head>
 <body>
 
     <a href="index.html" class="back-link">← Zurück zur Startseite</a>
 
-    <h1>Datenschutzerklärung für MedVitrine</h1>
-    <p><em>Stand: 26.06.2026</em></p>
+    <h1>Datenschutzerklärung für MediPartner</h1>
+    <p><em>Stand: 03.09.2026</em></p>
+
+    <div class="note">
+        <strong>Hinweis:</strong> Diese Erklärung beschreibt den aktuellen Stand der App MediPartner
+        (Android). Sie ersetzt die frühere Datenschutzerklärung für „MedVitrine“.
+        Sie ist als Entwurf für die Veröffentlichung gedacht und ersetzt keine individuelle
+        Rechtsberatung.
+    </div>
 
     <h2>1. Verantwortlicher</h2>
-    <p>Dennis Dittmann<br>
-    Haydnstr. 9<br>
-    74821 Mosbach<br>
-    E-Mail: <a href="mailto:kontakt@dennis-dittmann.de">kontakt@dennis-dittmann.de</a></p>
+    <p>
+        Dennis Dittmann<br>
+        Haydnstr. 9<br>
+        74821 Mosbach<br>
+        E-Mail: <a href="mailto:kontakt@dennis-dittmann.de">kontakt@dennis-dittmann.de</a><br>
+        Support: <a href="mailto:dedix-support@online.de">dedix-support@online.de</a>
+    </p>
 
-    <h2>2. Dein Datenschutz steht an erster Stelle</h2>
-    <p>Wir nehmen den Schutz deiner Gesundheitsdaten sehr ernst. Unsere App wurde mit dem Ziel entwickelt, deine Privatsphäre maximal zu schützen. Alle deine eingegebenen Medikationsdaten werden ausschließlich lokal auf deinem Gerät gespeichert.</p>
+    <h2>2. Grundsatz: lokal zuerst</h2>
+    <p>
+        MediPartner ist so gebaut, dass deine persönlichen Gesundheits- und Medikationsdaten
+        <strong>vorrangig lokal auf deinem Gerät</strong> gespeichert werden (lokale Datenbank).
+        Ohne dein Zutun werden keine Therapiepläne, Bestände, Profile, Notizen oder Termine
+        an uns übermittelt.
+    </p>
+    <p>
+        Es gibt <strong>kein Nutzungs-Tracking</strong>, keine Werbe-IDs und keine Analyse-Tools
+        (z.&nbsp;B. kein Google Analytics, keine Crash-Reporter mit Nutzerprofil).
+    </p>
 
-    <h2>3. Keine Cloud-Speicherung</h2>
-    <p>Es findet keine Übertragung deiner Medikationsdaten an externe Server statt. Es gibt keine Cloud-Synchronisation und keine zentralen Datenbanken, auf die wir oder Dritte Zugriff hätten. Wenn du dein Gerät verlierst oder die App löschst, sind die Daten entsprechend der technischen Gegebenheiten eines lokalen Speichers unwiderruflich gelöscht.</p>
-
-    <h2>4. Erhebung von Daten</h2>
+    <h2>3. Welche Daten die App lokal speichert</h2>
+    <p>Je nach Nutzung können auf deinem Gerät u.&nbsp;a. folgende Daten liegen:</p>
     <ul>
-        <li><strong>Lokale Daten:</strong> Alle Informationen (Medikamente, Dosierungen, MHD, PZN, Bestände) verbleiben in der Datenbank auf deinem Smartphone.</li>
-        <li><strong>Kein Tracking:</strong> Wir nutzen keine Analyse-Tools, Werbe-Tracker oder Dienstleister, die dein Nutzerverhalten auswerten oder Gesundheitsdaten erfassen.</li>
-        <li><strong>Berechtigungen:</strong> Die App benötigt lediglich Zugriff auf die Kamera, um Barcodes (PZN) einzuscannen. Diese Bilddaten werden nicht gespeichert oder an Dritte gesendet.</li>
+        <li><strong>Profile:</strong> Spitzname, optional Vor-/Nachname, Geburtsdatum, Krankenkasse, Versichertennummer, Allergien, Profilfarbe</li>
+        <li><strong>Ärzte &amp; Kontakte:</strong> Name, Fachrichtung, Kontaktdaten</li>
+        <li><strong>Medikamente &amp; Inventar:</strong> PZN/GTIN, Anzeigenamen, Wirkstoffe, Dosierungen, Packungsgrößen, Bestände, MHD, Chargen, Hinweise, Teilbarkeit</li>
+        <li><strong>Therapieplan / Dosierer:</strong> Einnahmezeiten, Dosierungen, Befüllungsplanung</li>
+        <li><strong>Bestellliste:</strong> vorgemerkte Präparate und Mengen</li>
+        <li><strong>Termine:</strong> Datum/Uhrzeit, Arzt, Ort, Grund, Notizen, Erinnerungseinstellungen</li>
+        <li><strong>App-Einstellungen:</strong> z.&nbsp;B. Theme, Erinnerungszeiten, Pro-/Free-Status (lokal), optionale Sync-/Backup-Zugangsdaten</li>
+    </ul>
+    <p>
+        Diese Daten verbleiben auf dem Gerät, bis du sie in der App löschst, ein Backup
+        überschreibt oder die App (bzw. App-Daten) deinstallierst/zurücksetzt.
+    </p>
+
+    <h2>4. Geräteberechtigungen</h2>
+    <ul>
+        <li><strong>Kamera:</strong> zum Scannen von PZN-Barcodes und GS1-DataMatrix-Codes. Bilddaten werden für die Erkennung verarbeitet und nicht dauerhaft als Foto gespeichert oder an Dritte gesendet.</li>
+        <li><strong>Benachrichtigungen:</strong> für optionale Termin- und Einnahmeerinnerungen. Die Planung erfolgt lokal auf dem Gerät.</li>
+        <li><strong>Kalender (optional):</strong> nur wenn du einen Termin bewusst „in den Gerätekalender legen“ wählst.</li>
+        <li><strong>Netzwerk:</strong> nur für die unten genannten, bewusst ausgelösten bzw. klar erkennbaren Online-Funktionen.</li>
     </ul>
 
-    <h2>5. Deine Rechte</h2>
-    <p>Da wir keine personenbezogenen Daten auf unseren Servern speichern, können wir keine Datenauskünfte erteilen oder Daten für dich löschen. Du hast die volle Kontrolle:</p>
+    <h2>5. Online-Funktionen (nur bei Nutzung)</h2>
+
+    <h3>5.1 Medikamenten-Stammdaten (Katalog)</h3>
+    <p>
+        Beim Scannen oder Nachladen von Packungsinformationen kann die App öffentliche
+        Medikamenten-Stammdaten abrufen (z.&nbsp;B. Name, Wirkstoffe, Darreichungsform, Packungsgröße)
+        über:
+    </p>
     <ul>
-        <li>Durch das Löschen der App werden sämtliche von dir eingegebene Daten dauerhaft von deinem Gerät entfernt.</li>
-        <li>Über die App-Einstellungen kannst du deine Daten jederzeit manuell verwalten oder zurücksetzen.</li>
+        <li>einen von uns betriebenen <strong>Katalog-Server</strong> (Stammdaten für PZNs), und/oder</li>
+        <li>öffentliche Quellen im Internet (z.&nbsp;B. Arzneimittel-Informationsseiten) zur Ergänzung fehlender Stammdaten.</li>
     </ul>
+    <p>
+        Dabei werden in der Regel nur die <strong>PZN bzw. GTIN</strong> (und vergleichbare
+        Produktkennungen) übermittelt – <strong>keine</strong> persönlichen Profildaten,
+        keine Bestände und keine Therapiepläne.
+    </p>
+    <p>
+        Optional kann die App anonymisierte/gemeinschaftliche Stammdateneinträge
+        (Produktinformationen zu einer PZN) an den Katalog-Server beitragen, sofern diese
+        Funktion aktiv ist. Es handelt sich um Produktstammdaten, nicht um deine persönliche
+        Medikationshistorie.
+    </p>
+
+    <h3>5.2 Backup per WebDAV (optional, typischerweise PRO)</h3>
+    <p>
+        Die App kann optional Backups über das WebDAV-Protokoll speichern.
+        <strong>Das ist nicht unsere Cloud</strong> und kein von uns betriebener Sync-Server.
+        Jede Nutzerin und jeder Nutzer trägt <strong>eigene</strong> WebDAV-Zugangsdaten ein
+        (z.&nbsp;B. persönliche Nextcloud, Synology DSM, anderer selbst gewählter Anbieter).
+        Zielserver, Ordner und Zugangsdaten bestimmst ausschließlich du.
+    </p>
+    <p>
+        Die Backup-Daten werden nur zwischen deinem Gerät und dem von dir angegebenen Server
+        übertragen. Wir erhalten dadurch keinen Zugriff auf deine Medikationsdaten und speichern
+        deine WebDAV-Zugangsdaten nicht auf unseren Systemen (sie liegen lokal in der App).
+    </p>
+    <p>
+        Verantwortlich für den Schutz der Backup-Dateien bist du bzw. der Betreiber
+        deines gewählten Cloud-/WebDAV-Dienstes.
+    </p>
+
+    <h3>5.3 Teilen (optional, bewusst ausgelöst)</h3>
+    <p>
+        Funktionen wie Bestellliste teilen, ICS-Kalenderdatei teilen oder WhatsApp-Links
+        nutzen die vom Betriebssystem bereitgestellten Teilen-Dialoge. Welche Daten wohin
+        gelangen, entscheidest du im jeweiligen Teilen-Schritt.
+    </p>
+
+    <h3>5.4 Kontaktformular</h3>
+    <p>
+        Wenn du über die App eine Nachricht sendest, werden die von dir eingegebenen Angaben
+        (z.&nbsp;B. Name, Antwort-E-Mail, Kategorie, Nachrichtentext) an uns übermittelt.
+        Technisch kann dafür ein Formular-Dienst (FormSubmit) als Übermittlungsweg genutzt werden.
+        Wir verwenden diese Daten ausschließlich zur Bearbeitung deiner Anfrage.
+    </p>
+
+    <h3>5.5 Google Play / Gerätehersteller</h3>
+    <p>
+        Bei Installation und Updates aus dem Google Play Store verarbeitet Google eigene Daten
+        gemäß den Datenschutzbestimmungen von Google. Für den Kauf/die Verwaltung von
+        Abonnements (sofern später aktiv) gelten zusätzlich die Bedingungen des jeweiligen
+        Stores.
+    </p>
+
+    <h2>6. Zweck und Rechtsgrundlagen</h2>
+    <ul>
+        <li><strong>Lokale Speicherung:</strong> Durchführung der von dir gewünschten App-Funktionen (Vertrag bzw. vorvertragliche Maßnahmen / berechtigte Interessen an einer funktionsfähigen lokalen App, Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b bzw.&nbsp;f DSGVO). Gesundheitsbezogene Angaben speicherst du bewusst selbst; die Verarbeitung erfolgt zur von dir initiierten Nutzung der App.</li>
+        <li><strong>Stammdatenabruf:</strong> Bereitstellung korrekter Produktinformationen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b/f DSGVO).</li>
+        <li><strong>Kontaktanfragen:</strong> Bearbeitung deiner Nachricht (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b/f DSGVO).</li>
+        <li><strong>Optionales Backup / Teilen / Kalender:</strong> auf deine ausdrückliche Handlung hin (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a und/oder lit.&nbsp;b DSGVO).</li>
+    </ul>
+
+    <h2>7. Speicherdauer</h2>
+    <ul>
+        <li><strong>Lokale App-Daten:</strong> bis zur Löschung durch dich, App-Deinstallation oder Geräte-Reset.</li>
+        <li><strong>Backup auf deiner eigenen Cloud/WebDAV:</strong> nach den Regeln deines Anbieters bzw. bis du die Dateien löschst. Diese Backups liegen nicht bei uns.</li>
+        <li><strong>Kontaktanfragen:</strong> so lange, wie zur Bearbeitung und üblichen Nachvollziehbarkeit nötig; danach Löschung oder Einschränkung.</li>
+        <li><strong>Katalog-Stammdaten auf dem Server:</strong> produktbezogen, ohne Personenbezug zu deinem Profil; Speicherung für den Betrieb des gemeinsamen Katalogs.</li>
+    </ul>
+
+    <h2>8. Empfänger / Auftragsverarbeitung</h2>
+    <p>Je nach Funktion können folgende Stellen beteiligt sein:</p>
+    <ul>
+        <li>unser Katalog-Server (Stammdaten),</li>
+        <li>FormSubmit (Übermittlung von Kontaktformularen),</li>
+        <li>von dir gewählte Drittanbieter (dein eigener WebDAV-/Cloud-Dienst, Teilen-Apps, Gerätekalender),</li>
+        <li>Google Play / Android-Systemdienste.</li>
+    </ul>
+    <p>
+        Eine Weitergabe deiner persönlichen Medikationsdaten an uns oder Dritte zu Werbezwecken
+        findet nicht statt.
+    </p>
+
+    <h2>9. Deine Rechte</h2>
+    <p>Du hast – soweit anwendbar – das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch (Art.&nbsp;15–21 DSGVO). Außerdem kannst du dich bei einer Aufsichtsbehörde beschweren.</p>
+    <p><strong>Praktisch in der App:</strong></p>
+    <ul>
+        <li>Lokale Daten kannst du in der App bearbeiten, zurücksetzen oder durch Deinstallation entfernen.</li>
+        <li>Da der Großteil deiner Gesundheitsdaten nur lokal liegt, können wir dazu in der Regel keine Auskunft aus unseren Systemen erteilen – außer zu Daten, die du uns aktiv gesendet hast (z.&nbsp;B. Kontaktformular) oder zu rein produktbezogenen Katalogeinträgen.</li>
+    </ul>
+
+    <h2>10. Sicherheit</h2>
+    <p>
+        Wir treffen angemessene technische und organisatorische Maßnahmen für die von uns
+        betriebenen Online-Komponenten (z.&nbsp;B. Zugangsschutz der Katalog-API).
+        Der Schutz der lokalen Daten hängt wesentlich von der Gerätesicherung ab
+        (Bildschirmsperre, Geräteverschlüsselung, aktuelle Systemupdates).
+        Für optionale Backups auf deiner Cloud gilt die Sicherheit deines gewählten Anbieters.
+    </p>
+
+    <h2>11. Minderjährige</h2>
+    <p>
+        Die App richtet sich an Erwachsene bzw. an Personen, die Medikamente rechtmäßig
+        verwalten. Profile für Angehörige legst du in eigener Verantwortung an.
+    </p>
+
+    <h2>12. Änderungen</h2>
+    <p>
+        Wir passen diese Datenschutzerklärung an, wenn sich Funktionen oder Rechtslage ändern.
+        Der aktuelle Stand ist oben angegeben. Eine aktualisierte Fassung wird an derselben
+        Stelle veröffentlicht.
+    </p>
 
     <footer>
-        &copy; 2026 Dennis Dittmann | MedVitrine App
+        &copy; 2026 Dennis Dittmann | MediPartner
     </footer>
 
 </body>
