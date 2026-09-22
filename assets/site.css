@@ -170,15 +170,6 @@ body {
     color: #666;
 }
 
-.project-card__preview {
-    width: 100%;
-    max-width: 220px;
-    margin: 0 auto 12px;
-    border-radius: 10px;
-    display: block;
-    border: 1px solid #ddd;
-}
-
 footer.site-footer {
     margin-top: 48px;
     font-size: 0.8em;
