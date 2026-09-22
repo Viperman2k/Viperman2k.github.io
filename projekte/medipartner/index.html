@@ -6,6 +6,7 @@
     <meta name="description" content="MediPartner – Medizinschrank, Pillenbox, Bestellliste und Termine in einer Android-App.">
     <title>MediPartner – Hausapotheke digital</title>
     <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/screenshot-gallery.js" defer></script>
 </head>
 <body>
 <div class="page page--showcase">
@@ -33,51 +34,89 @@
 
     <section class="screenshots-section" aria-labelledby="screenshots-heading">
         <h2 id="screenshots-heading">Einblicke in die App</h2>
-        <p class="lead">Wische oder scroll seitlich · Klick auf ein Bild vergrößert es.</p>
+        <p class="lead">Pfeile zum Scrollen · Klick öffnet die Großansicht im Fenster.</p>
 
-        <div class="screenshot-carousel" tabindex="0">
-            <figure>
-                <a href="screenshots/web_01_home.png" target="_blank" rel="noopener">
-                    <img src="screenshots/web_01_home.png" width="520" height="980" alt="MediPartner auf dem Smartphone – Startbildschirm" loading="lazy" decoding="async">
-                </a>
-                <figcaption>Start – alle Funktionen</figcaption>
-            </figure>
-            <figure>
-                <a href="screenshots/web_02_dosierer.png" target="_blank" rel="noopener">
-                    <img src="screenshots/web_02_dosierer.png" width="520" height="980" alt="Dosierer in der App" loading="lazy" decoding="async">
-                </a>
-                <figcaption>Dosierer</figcaption>
-            </figure>
-            <figure>
-                <a href="screenshots/web_03_inventar.png" target="_blank" rel="noopener">
-                    <img src="screenshots/web_03_inventar.png" width="520" height="980" alt="Inventar Hausapotheke" loading="lazy" decoding="async">
-                </a>
-                <figcaption>Inventar</figcaption>
-            </figure>
-            <figure>
-                <a href="screenshots/web_05_bestellliste.png" target="_blank" rel="noopener">
-                    <img src="screenshots/web_05_bestellliste.png" width="520" height="980" alt="Bestellliste" loading="lazy" decoding="async">
-                </a>
-                <figcaption>Bestellliste</figcaption>
-            </figure>
-            <figure>
-                <a href="screenshots/web_06_therapieplan.png" target="_blank" rel="noopener">
-                    <img src="screenshots/web_06_therapieplan.png" width="520" height="980" alt="Therapieplan" loading="lazy" decoding="async">
-                </a>
-                <figcaption>Therapieplan</figcaption>
-            </figure>
-            <figure>
-                <a href="screenshots/web_07_termine.png" target="_blank" rel="noopener">
-                    <img src="screenshots/web_07_termine.png" width="520" height="980" alt="Arzttermine" loading="lazy" decoding="async">
-                </a>
-                <figcaption>Termine</figcaption>
-            </figure>
+        <div class="screenshot-carousel-wrap">
+            <button type="button" class="carousel-nav carousel-nav--prev" data-carousel-prev aria-label="Screenshots nach links">
+                ‹
+            </button>
+
+            <div class="screenshot-carousel" data-screenshot-carousel tabindex="0">
+                <figure>
+                    <button type="button" class="screenshot-thumb" data-screenshot-open
+                        data-full="screenshots/web_01_home.png"
+                        data-caption="Start – alle Funktionen"
+                        data-alt="MediPartner auf dem Smartphone – Startbildschirm">
+                        <img src="screenshots/web_01_home.png" width="520" height="980" alt="" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption>Start – alle Funktionen</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="screenshot-thumb" data-screenshot-open
+                        data-full="screenshots/web_02_dosierer.png"
+                        data-caption="Dosierer"
+                        data-alt="Dosierer in der App">
+                        <img src="screenshots/web_02_dosierer.png" width="520" height="980" alt="" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption>Dosierer</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="screenshot-thumb" data-screenshot-open
+                        data-full="screenshots/web_03_inventar.png"
+                        data-caption="Inventar"
+                        data-alt="Inventar Hausapotheke">
+                        <img src="screenshots/web_03_inventar.png" width="520" height="980" alt="" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption>Inventar</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="screenshot-thumb" data-screenshot-open
+                        data-full="screenshots/web_05_bestellliste.png"
+                        data-caption="Bestellliste"
+                        data-alt="Bestellliste">
+                        <img src="screenshots/web_05_bestellliste.png" width="520" height="980" alt="" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption>Bestellliste</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="screenshot-thumb" data-screenshot-open
+                        data-full="screenshots/web_06_therapieplan.png"
+                        data-caption="Therapieplan"
+                        data-alt="Therapieplan">
+                        <img src="screenshots/web_06_therapieplan.png" width="520" height="980" alt="" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption>Therapieplan</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="screenshot-thumb" data-screenshot-open
+                        data-full="screenshots/web_07_termine.png"
+                        data-caption="Termine"
+                        data-alt="Arzttermine">
+                        <img src="screenshots/web_07_termine.png" width="520" height="980" alt="" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption>Termine</figcaption>
+                </figure>
+            </div>
+
+            <button type="button" class="carousel-nav carousel-nav--next" data-carousel-next aria-label="Screenshots nach rechts">
+                ›
+            </button>
         </div>
     </section>
 
     <footer class="site-footer">
         &copy; Dennis Dittmann · <a href="../../kontakt.html">Kontakt</a>
     </footer>
+</div>
+
+<div class="lightbox" data-screenshot-lightbox hidden role="dialog" aria-modal="true" aria-label="Screenshot vergrößert">
+    <button type="button" class="lightbox__close" aria-label="Schließen">×</button>
+    <button type="button" class="lightbox__nav lightbox__prev" aria-label="Vorheriges Bild">‹</button>
+    <button type="button" class="lightbox__nav lightbox__next" aria-label="Nächstes Bild">›</button>
+    <div class="lightbox__content">
+        <img class="lightbox__img" alt="">
+        <p class="lightbox__caption"></p>
+    </div>
 </div>
 </body>
 </html>
