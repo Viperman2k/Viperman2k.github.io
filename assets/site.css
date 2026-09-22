@@ -135,10 +135,26 @@ body {
 }
 
 .project-card__actions {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 10px;
     margin-top: 4px;
+}
+
+.project-card__actions > .btn--primary {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.project-card__actions-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.project-card__actions-row .btn {
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .btn {
