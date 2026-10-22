@@ -1,0 +1,15 @@
+---
+description: DeDix Firmen-Website dedix.eu – Scope und Runbook (nicht MediPartner-App)
+alwaysApply: true
+---
+
+# DeDix – Firmen-Web & dedix.eu
+
+- **Scope:** GitHub Pages, STRATO DNS/Mail, Impressum/Datenschutz, URL-Migration zu `dedix.eu`.
+- **Nicht:** Flutter/App-Features in `med_vitrine_v2` (nur URL-Sync in `legal_urls.dart` wenn Phase E).
+- **Runbook:** Lies zuerst `docs/DEDIX-EU-SETUP.md` (Phasen A–E, Dateiliste URL-Anpassung).
+- **Firma:** DeDix Dennis Dittmann, Haydnstr. 9, 74821 Mosbach.
+- **STRATO:** Domainpaket `.eu` – kein STRATO-Webhosting; Website bleibt GitHub Pages.
+- **Reihenfolge:** DNS + GitHub Custom Domain → HTTPS → Mail testen (Phase D) → Canonical/Store-URLs (Phase E).
+
+Wenn der Nutzer schreibt, STRATO sei aktiv: Phasen A–E der Reihe nach abarbeiten und Checkliste im Runbook abhaken.
