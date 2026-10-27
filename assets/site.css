@@ -41,6 +41,14 @@ body {
 .header h1 {
     margin: 0 0 8px;
     font-size: 1.85em;
+    line-height: 1.15;
+}
+
+.header h1 .header-owner {
+    display: block;
+    margin-top: 0.15em;
+    font-size: 0.62em;
+    font-weight: 500;
 }
 
 .header p {
